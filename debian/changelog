@@ -1,5 +1,51 @@
-libqinfinity (0.5.0-1) UNRELEASED; urgency=low
+libqinfinity (1:0.5.1-1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * New upstream release
+  * Repackaged for git.
+  * Bumped Standards-Version to 3.9.4
+  * Bump debhelper compat to 9
+  * Updated copyright file.
+  * Added symbols file libqinfinity3.symbols
+  * Upstream bumped the SONAME, use libqinfinity3.
+  * Switch to libinfinity-0.5
+  * Add dependency pkg-kde-tools helper.
 
- -- Diane Trout <diane@ghic.org>  Wed, 21 Aug 2013 18:19:07 -0700
+ -- Diane Trout <diane@ghic.org>  Mon, 30 Sep 2013 21:04:25 -0700
+
+libqinfinity (1.0~beta5-1) unstable; urgency=low
+
+  [ Ryan Kavanagh ]
+  * New upstream release
+  * Updated changelog, watch and control with new website
+  * Added Vcs-* tags since libqinfinity is now in pkg-kde's kde-extras SVN.
+  * Bumped Standards-Version from 3.8.1 to 3.8.4 (no changes needed).
+  * Upstream bumped the SONAME, update libqinfinity1 -> libqinfinity2
+  * Update the libqinfinity1 lintian-overrides to the libqinfinity2 package
+    name
+  * Both libqinfinity1 and libqinfinity2 ship /usr/lib/libqinfinity.so.0.1 ,
+    therefore we need to conflict.
+  * Switch to libinfinity-0.4
+  * Switch to Debian source format 3.0 (quilt)
+  * Move from experimental to unstable
+
+  [ Fathi Boudra ]
+  * Cleaned up build dependencies:
+    - Remove useless versions.
+    - Remove qt4-qmake as it is a libqt-dev dependency.
+
+  [ Mark Purcell ]
+  * debian/watch uversionmangle rename upstream b -> ~beta & svn-upgrade
+  * Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+  * Add myself to uploaders
+
+ -- Mark Purcell <msp@debian.org>  Tue, 06 Apr 2010 17:40:22 +1000
+
+libqinfinity (1.0~beta3-1) experimental; urgency=low
+
+  [ Ryan Kavanagh ]
+  * Initial release (Closes: #530891)
+
+  [ Philipp Kern ]
+  * Changed section of libqinfinity-dbg to debug.
+
+ -- Ryan Kavanagh <ryanakca@kubuntu.org>  Fri, 29 May 2009 14:44:34 +0200
