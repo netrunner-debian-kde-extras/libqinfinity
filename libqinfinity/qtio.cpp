@@ -356,7 +356,7 @@ InfIoDispatch *QtIo::addDispatch( InfIoDispatchFunc func,
 
 void QtIo::removeDispatch( InfIoDispatch *dispatch )
 {
-    InfEvent *event = reinterpret_cast<InfEvent*>( dispatch );
+    InfEvent *event = reinterpret_cast<InfEvent*>( event );
     cancelledEventsMutex.lock();
     cancelledEvents.append( event );
     cancelledEventsMutex.unlock();
