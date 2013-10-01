@@ -365,6 +365,11 @@ void BrowserModel::slotNodeAdded( const BrowserIter &itr )
     parentItem->insertRow( 0, item );
 }
 
+NodeItem* BrowserModel::itemForPath(QString path, NodeItem* start)
+{
+    
+}
+
 void BrowserModel::slotNodeRemoved( const BrowserIter &itr )
 {
     qDebug() << "Removing node";

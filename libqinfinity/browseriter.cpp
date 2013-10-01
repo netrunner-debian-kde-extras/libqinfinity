@@ -114,7 +114,7 @@ ExploreRequest* BrowserIter::explore()
 {
     if( m_infBrowser ) {
         if ( InfcExploreRequest* req = infc_browser_iter_get_explore_request( m_infBrowser, &m_infBrowserIter ) ) {
-            return ExploreRequest::wrap(req, 0, false);
+            return ExploreRequest::wrap(req);
         }
         else {
             return ExploreRequest::wrap(infc_browser_iter_explore( m_infBrowser, &m_infBrowserIter ));
