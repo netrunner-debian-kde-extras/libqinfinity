@@ -11,8 +11,8 @@ Build-Depends: debhelper (>= 9.0.0),  cmake, pkg-kde-tools, libx11-dev,
 Standards-Version: 3.9.4
 Section: libs
 Homepage: https://projects.kde.org/libqinfinity
-#Vcs-Git: git://git.debian.org/collab-maint/libqinfinity.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/libqinfinity.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-extras/libqinfinity.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/libqinfinity.git
 
 Package: libqinfinity-dev
 Section: libdevel
