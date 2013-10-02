@@ -13,12 +13,34 @@ Package: libqinfinity-dev
 Section: libdevel
 Architecture: any
 Depends: libqinfinity3 (= ${binary:Version}), ${misc:Depends}
-Description: infinote collaborative text editing from Qt 
- infinote collaborative text editing from Qt
+Description: development headers for Qt infinote collaborative text editing
+ Library to build collaborative text editors. Changes to the text
+ buffers are synced to all other clients over a central server. Even
+ though a central server is involved, the local user sees his changes
+ applied instantly and the merging is done on the individual clients.
+ .
+ This package contains the Qt interface's shared object files.
 
 Package: libqinfinity3
-Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: infinote collaborative text editing from Qt
- infinote collaborative text editing from Qt
+ Library to build collaborative text editors. Changes to the text
+ buffers are synced to all other clients over a central server. Even
+ though a central server is involved, the local user sees his changes
+ applied instantly and the merging is done on the individual clients.
+ .
+ This package contains the Qt interface's headers for libqinfinity and
+ all files needed to link applications dependening on this library.
+
+Package: libqinfinity-dbg
+Section: debug
+Architecture: any
+Depends: libqinfinity3 (= ${binary:Version}), ${misc:Depends}
+Description: debug symbols for infinote collaborative text editing from Qt
+ Library to build collaborative text editors. Changes to the text
+ buffers are synced to all other clients over a central server. Even
+ though a central server is involved, the local user sees his changes
+ applied instantly and the merging is done on the individual clients.
+ .
+ This package contains the Qt interface's debugging symbols.
