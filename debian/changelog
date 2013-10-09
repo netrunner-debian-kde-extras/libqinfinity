@@ -9,6 +9,7 @@ libqinfinity (1:0.5.1-1) UNRELEASED; urgency=low
   * Upstream bumped the SONAME, use libqinfinity3.
   * Switch to libinfinity-0.5
   * Add dependency pkg-kde-tools helper.
+  * Introduce epoch to allow changing version number to match that of libinfinity.
 
  -- Diane Trout <diane@ghic.org>  Mon, 30 Sep 2013 21:04:25 -0700
 
