@@ -1,4 +1,4 @@
-libqinfinity (1:0.5.1-1) UNRELEASED; urgency=low
+libqinfinity (1:0.5.1-1) experimental; urgency=low
 
   * New upstream release
   * Repackaged for git.
@@ -10,8 +10,9 @@ libqinfinity (1:0.5.1-1) UNRELEASED; urgency=low
   * Switch to libinfinity-0.5
   * Add dependency pkg-kde-tools helper.
   * Introduce epoch to allow changing version number to match that of libinfinity.
+  * Remove unneeded debian/*.dirs files
 
- -- Diane Trout <diane@ghic.org>  Mon, 30 Sep 2013 21:04:25 -0700
+ -- Diane Trout <diane@ghic.org>  Sat, 19 Oct 2013 14:58:35 -0700
 
 libqinfinity (1.0~beta5-1) unstable; urgency=low
 
