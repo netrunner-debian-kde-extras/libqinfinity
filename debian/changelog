@@ -11,6 +11,8 @@ libqinfinity (1:0.5.1-1) experimental; urgency=low
   * Add dependency pkg-kde-tools helper.
   * Introduce epoch to allow changing version number to match that of libinfinity.
   * Remove unneeded debian/*.dirs files
+  * Backport unversioned-header-dir.patch to put headers into an
+    unversioned directory
 
  -- Diane Trout <diane@ghic.org>  Sat, 19 Oct 2013 14:58:35 -0700
 

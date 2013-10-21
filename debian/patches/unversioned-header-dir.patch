@@ -1,0 +1,19 @@
+Author: Sven Brauch <svenbrauch@googlemail.com>
+Date:   Wed Oct 16 17:38:29 2013 +0200
+Description:
+    Install into include/libqinfinity/ instead of include/libqinfinity/..-1.0
+
+    The version number did not match, and also there's not really a point
+    in the extra subdirectorya
+
+    cherry picked from commit 7bc8175fb8894e14e6a92191e0867e929680fc51
+
+--- a/libqinfinity/CMakeLists.txt
++++ b/libqinfinity/CMakeLists.txt
+@@ -106,5 +106,5 @@
+ 	DESTINATION lib${LIB_SUFFIX})
+ 
+ install(FILES ${QInfinity_HDRS}
+-	DESTINATION include/libqinfinity-1.0/libqinfinity)
++	DESTINATION include/libqinfinity)
+ 
