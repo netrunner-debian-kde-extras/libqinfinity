@@ -9,7 +9,8 @@ libqinfinity (1:0.5.1-1) experimental; urgency=low
   * Upstream bumped the SONAME, use libqinfinity3.
   * Switch to libinfinity-0.5
   * Add dependency pkg-kde-tools helper.
-  * Introduce epoch to allow changing version number to match that of libinfinity.
+  * Introduce epoch to allow changing version number to match that
+    of libinfinity.
   * Remove unneeded debian/*.dirs files
   * Backport unversioned-header-dir.patch to put headers into an
     unversioned directory
