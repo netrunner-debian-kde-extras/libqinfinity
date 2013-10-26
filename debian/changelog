@@ -14,6 +14,7 @@ libqinfinity (1:0.5.1-1) experimental; urgency=low
   * Remove unneeded debian/*.dirs files
   * Backport unversioned-header-dir.patch to put headers into an
     unversioned directory
+  * Change Priority to optional for default, extra for the dbg file.
 
  -- Diane Trout <diane@ghic.org>  Sat, 19 Oct 2013 14:58:35 -0700
 
