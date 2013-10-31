@@ -3,6 +3,7 @@ libqinfinity (1:0.5.2-1) UNRELEASED; urgency=low
   * New upstream release 0.5.2.
   * Update copyright file
   * Update symbols file to libqinfinity4
+  * Remove unversioned-header-dir.patch applied upstream.
 
  -- Diane Trout <diane@ghic.org>  Tue, 29 Oct 2013 11:45:47 -0700
 
