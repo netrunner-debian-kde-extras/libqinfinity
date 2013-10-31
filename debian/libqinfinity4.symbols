@@ -1,5 +1,5 @@
-# SymbolsHelper-Confirmed: 1:0.5.1 amd64
-libqinfinity.so.3 libqinfinity3 #MINVER#
+# SymbolsHelper-Confirmed: 1:0.5.2 amd64
+libqinfinity.so.4 libqinfinity4 #MINVER#
  _Z29qinf_text_abstract_buffer_newPKcPN9QInfinity18AbstractTextBufferE@Base 1:0.5.1
  _ZN10QByteArrayD1Ev@Base 1:0.5.1
  _ZN10QByteArrayD2Ev@Base 1:0.5.1

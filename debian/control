@@ -17,7 +17,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-extras/libqinfinity
 Package: libqinfinity-dev
 Section: libdevel
 Architecture: any
-Depends: libqinfinity3 (= ${binary:Version}), ${misc:Depends}
+Depends: libqinfinity4 (= ${binary:Version}), ${misc:Depends}
 Description: development headers for Qt infinote collaborative text editing
  Library to build collaborative text editors. Changes to the text
  buffers are synced to all other clients over a central server. Even
@@ -26,7 +26,7 @@ Description: development headers for Qt infinote collaborative text editing
  .
  This package contains the Qt interface's shared object files.
 
-Package: libqinfinity3
+Package: libqinfinity4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: infinote collaborative text editing from Qt
@@ -42,7 +42,7 @@ Package: libqinfinity-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: libqinfinity3 (= ${binary:Version}), ${misc:Depends}
+Depends: libqinfinity4 (= ${binary:Version}), ${misc:Depends}
 Description: debug symbols for infinote collaborative text editing from Qt
  Library to build collaborative text editors. Changes to the text
  buffers are synced to all other clients over a central server. Even
