@@ -5,6 +5,7 @@ libqinfinity (1:0.5.2-1) UNRELEASED; urgency=low
   * Update symbols file to libqinfinity4
   * Remove unversioned-header-dir.patch applied upstream.
   * Add lintian-overrides to ignore no-upstream-changelog
+  * update debian/watch to use http.
 
  -- Diane Trout <diane@ghic.org>  Tue, 29 Oct 2013 11:45:47 -0700
 
