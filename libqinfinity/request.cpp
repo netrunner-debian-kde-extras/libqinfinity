@@ -23,30 +23,16 @@
 namespace QInfinity
 {
 
-Request::Request( InfcRequest *infRequest,
+Request::Request( InfRequest *infRequest,
     QObject *parent )
     : QGObject( G_OBJECT( infRequest ), parent, false )
 {
-    setupSignals();
+
 }
 
-void Request::setupSignals()
-{
-    new QGSignal( this, "failed",
-        G_CALLBACK(Request::signalFailed_cb), this, this );
-}
-
-void Request::signalFailed( GError *error )
+void Request::signalFailed( const GError *error )
 {
     emit( failed( error ) );
-}
-
-void Request::signalFailed_cb( InfcRequest *request,
-    GError *error,
-    void *user_data )
-{
-    Request *sender = static_cast<Request*>(user_data);
-    sender->signalFailed( error );
 }
 
 }

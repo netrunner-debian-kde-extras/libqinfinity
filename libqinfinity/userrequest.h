@@ -24,7 +24,7 @@
 #include <QPointer>
 
 #include <libinfinity/common/inf-user.h>
-#include <libinfinity/client/infc-user-request.h>
+#include <libinfinity/client/infc-request.h>
 
 namespace QInfinity
 {
@@ -35,16 +35,17 @@ class UserRequest
     Q_OBJECT;
 
     public:
-        UserRequest( InfcUserRequest *infRequest,
+        UserRequest( InfRequest *infRequest,
             QObject *parent = 0 );
 
     Q_SIGNALS:
         void finished( QPointer<QInfinity::User> user );
 
     private:
-        static void finished_cb( InfcUserRequest *infcUserRequest,
-            InfUser *user,
-            void *user_data );
+        static void finished_cb( InfRequest* request,
+                                 const InfRequestResult* result,
+                                 const GError* error,
+                                 void *user_data );
 
         void emit_finished( QPointer<QInfinity::User> user );
 
