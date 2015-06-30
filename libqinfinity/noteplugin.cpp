@@ -17,7 +17,7 @@
 
 #include "noteplugin.h"
 #include "communicationmanager.h"
-#include "communicationjoinedgroup.h"
+#include "communicationgroup.h"
 #include "xmlconnection.h"
 
 #include <QChar>
@@ -53,7 +53,7 @@ NotePlugin::~NotePlugin()
 InfSession *NotePlugin::create_session_cb( InfIo *io,
     InfCommunicationManager *comm_mgr,
     InfSessionStatus status,
-    InfCommunicationJoinedGroup *sync_group,
+    InfCommunicationGroup *sync_group,
     InfXmlConnection *sync_connection,
     void *user_data )
 {
@@ -61,9 +61,13 @@ InfSession *NotePlugin::create_session_cb( InfIo *io,
     NotePlugin *plugin = my_user_data->self;
     CommunicationManager *commMgr = CommunicationManager::wrap( comm_mgr, plugin );
     Session::Status cpp_status = Session::infStatusToCpp(status);
-    CommunicationJoinedGroup *joinedGroup = CommunicationJoinedGroup::wrap( sync_group, plugin );
+    CommunicationGroup *group = CommunicationGroup::wrap( sync_group, plugin );
     XmlConnection *connection = XmlConnection::wrap( sync_connection, plugin );
-    Session *session =  plugin->createSession( commMgr, cpp_status, joinedGroup, connection, my_user_data->clientPluginUserData );
+    Session *session =  plugin->createSession( commMgr,
+                                               cpp_status,
+                                               group,
+                                               connection,
+                                               my_user_data->clientPluginUserData );
     return INF_SESSION(session->gobject());
 }
 

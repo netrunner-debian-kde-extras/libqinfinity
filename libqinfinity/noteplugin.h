@@ -19,6 +19,7 @@
 #define QINFINITY_NOTE_PLUGIN_H
 
 #include "session.h"
+#include "communicationgroup.h"
 
 #include <libinfinity/client/infc-note-plugin.h>
 
@@ -61,7 +62,7 @@ class NotePlugin
          */
         virtual Session *createSession( CommunicationManager *commMgr,
             Session::Status sess_status,
-            CommunicationJoinedGroup *syncGroup,
+            CommunicationGroup *syncGroup,
             XmlConnection *syncConnection,
             void* clientPluginUserData = 0 ) = 0;
 
@@ -71,19 +72,18 @@ class NotePlugin
         InfcNotePlugin *infPlugin();
 
     private:
+        static InfSession *create_session_cb( InfIo* io,
+                                              InfCommunicationManager* comm_mgr,
+                                              InfSessionStatus status,
+                                              InfCommunicationGroup* sync_group,
+                                              InfXmlConnection* sync_connection,
+                                              void* user_data );
         struct UserData {
             NotePlugin* self;
             // allows the client plugin to pass custom user data
             // when subscribing a session
             void* clientPluginUserData;
         };
-
-        static InfSession *create_session_cb( InfIo *io,
-            InfCommunicationManager *comm_mgr,
-            InfSessionStatus status,
-            InfCommunicationJoinedGroup *sync_group,
-            InfXmlConnection *sync_connection,
-            void *user_data );
 
         char *m_name;
         InfcNotePlugin m_infPlugin;
