@@ -9,6 +9,7 @@ libqinfinity (1:0.5.2+git20140831-1) UNRELEASED; urgency=low
   * update debian/watch to use http.
   * Bump Standards-Version to 3.9.6. No changes needed.
   * Update build-dependency to libqinfinity-0.6
+  * Remove block in copyright file covering FindQt4 as it was removed.
 
  -- Diane Trout <diane@ghic.org>  Tue, 30 Jun 2015 14:54:20 -0700
 

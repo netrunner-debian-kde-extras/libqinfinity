@@ -8,10 +8,6 @@ Copyright: 2009 Gregory Haynes <greg@greghaynes.net>
            2013 Sven Brauch <svenbrauch@gmail.com>
 License: GPL-2.0+
 
-Files: CMakeModules/FindQt4.cmake
-Copyright: 2002 Kitware, Inc. Insight Consortium.
-License: BSD-3-clause
-
 Files: CMakeModules/FindLibXml2.cmake CMakeModules/FindGNUTLS.cmake
  CMakeModules/FindGSASL.cmake CMakeModules/FindLibinftext.cmake
  CMakeModules/FindGlib.cmake
