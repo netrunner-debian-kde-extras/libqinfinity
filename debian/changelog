@@ -2,7 +2,8 @@ libqinfinity (1:0.5.2+git20140831-1) UNRELEASED; urgency=low
 
   * Update to git snapshot 20140831 for infinote 0.6 compatibility
   * Update copyright file
-  * Update symbols file to libqinfinity4
+  * SONAME change so rename libqinfinity4 to libqinfinity5.
+  * Update symbols file to libqinfinity5
   * Remove unversioned-header-dir.patch applied upstream.
   * Add lintian-overrides to ignore no-upstream-changelog
   * update debian/watch to use http.
