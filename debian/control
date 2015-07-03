@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9.0.0),  cmake, pkg-kde-tools, libx11-dev,
  libqt4-dev,
  libglib2.0-dev,
  libgsasl7-dev,
- libinfinity-0.5-dev,
+ libinfinity-0.6-dev,
  libxml2-dev
 Standards-Version: 3.9.6
 Section: libs
